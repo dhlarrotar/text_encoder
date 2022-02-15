@@ -3,24 +3,33 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Text encoder</title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
 		<div class="area-encriptado">
 			<h3 class="titulo">Encriptador de mensajes</h3>
 			<ul id="mensajes-errores"></ul>
-		 	<input id="texto" name="Texto a encriptar" type="text" placeholder="Escribe aquí tu mensaje" class="campo">
-        	<br>
-			 <button id="encriptar" class="boton-encriptar">Encriptar mensaje</button>
-            <button id="desencriptar" class="boton-desencriptar">Desencriptar mensaje</button>
+			<textarea placeholder="Escribe aquí tu mensaje" id="texto" class="campo"></textarea>
+        	 <button id="encriptar" class="boton-encriptar">Encriptar</button>
+            <button id="desencriptar" class="boton-desencriptar">Desencriptar</button>
 		</div>
 		<div class="area-resultado">
-			<img src="img/lupa.png" id="lupa">
-			<p class="titulo-resultado"> No se han detectado mensajes</p>
-			<p class="texto-resultado">Escribe tu mensaje para encriptar o desencriptar</p>
-			<button id="copiar" class="boton-copiar">Copiar resultado</button>
+			<div class="bienvenida">
+				<img src="img/caja-fuerte.png" id="caja-fuerte">
+				<p class="titulo-bienvenida"> No se han detectado mensajes</p>
+				<p class="texto-bienvenida">Escribe tu mensaje para encriptar o desencriptar</p>
+				
+			</div>
+			<div class=" invisible">
+				<textarea " id="texto-resultado"></textarea>
+				<button id="copiar">Copiar resultado</button>
+			</div>
 		</div>
-		<footer> Desarrollado por Daniel Larrota Rincón</footer>
+		<div>
+			<footer> Desarrollado por Daniel Larrota Rincón</footer>
+		</div>
+		
 		<script src="encriptar.js"></script>	
 		<script src="copiar-texto.js"></script>	
 
