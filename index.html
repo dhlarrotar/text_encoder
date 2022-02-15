@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Text encoder</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<div class="area-encriptado">
+			<h3 class="titulo">Encriptador de mensajes</h3>
+			<ul id="mensajes-errores"></ul>
+		 	<input id="texto" name="Texto a encriptar" type="text" placeholder="Escribe aquí tu mensaje" class="campo">
+        	<br>
+			 <button id="encriptar" class="boton-encriptar">Encriptar mensaje</button>
+            <button id="desencriptar" class="boton-desencriptar">Desencriptar mensaje</button>
+		</div>
+		<div class="area-resultado">
+			<img src="img/lupa.png" id="lupa">
+			<p class="titulo-resultado"> No se han detectado mensajes</p>
+			<p class="texto-resultado">Escribe tu mensaje para encriptar o desencriptar</p>
+			<button id="copiar" class="boton-copiar">Copiar resultado</button>
+		</div>
+		<footer> Desarrollado por Daniel Larrota Rincón</footer>
+		<script src="encriptar.js"></script>	
+		<script src="copiar-texto.js"></script>	
+
+ 	</body>
+</html>
