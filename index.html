@@ -11,18 +11,18 @@
 			<h3 class="titulo">Encriptador de mensajes</h3>
 			<ul id="mensajes-errores"></ul>
 			<textarea placeholder="Escribe aquí tu mensaje" id="texto" class="campo"></textarea>
-        	 <button id="encriptar" class="boton-encriptar">Encriptar</button>
-            <button id="desencriptar" class="boton-desencriptar">Desencriptar</button>
+        	 <button id="encriptar" class="boton-main">Encriptar</button>
+            <button id="desencriptar" class="boton-main">Desencriptar</button>
 		</div>
 		<div class="area-resultado">
 			<div class="bienvenida">
-				<img src="img/caja-fuerte.png" id="caja-fuerte">
-				<p class="titulo-bienvenida"> No se han detectado mensajes</p>
-				<p class="texto-bienvenida">Escribe tu mensaje para encriptar o desencriptar</p>
+				<img src="img/caja-fuerte.png" class="bienvenida" id="caja-fuerte">
+				<p class="bienvenida" id="titulo-bienvenida"> No se han detectado mensajes</p>
+				<p class="bienvenida" id="texto-bienvenida">Escribe tu mensaje para encriptar o desencriptar</p>
 				
 			</div>
-			<div class=" invisible">
-				<textarea " id="texto-resultado"></textarea>
+			<div class=" invisible" id="imprimir-resultado">
+				<textarea id="texto-resultado"></textarea>
 				<button id="copiar">Copiar resultado</button>
 			</div>
 		</div>
@@ -30,8 +30,8 @@
 			<footer> Desarrollado por Daniel Larrota Rincón</footer>
 		</div>
 		
-		<script src="encriptar.js"></script>	
-		<script src="copiar-texto.js"></script>	
+		<script src="js/encriptar.js"></script>	
+		<script src="js/copiar-texto.js"></script>	
 
  	</body>
 </html>
