@@ -13,13 +13,13 @@ body{
 	line-height: 150%;
 	color: #742c2c;
 	background-color: #EBEBEB;
-	width: 50%;
+	width: 800px;
 }
 
 
 .area-encriptado{
 	margin-top: 30px;
-	margin-bottom: 1%;
+	margin-bottom: 2%;
 	width: 60%;
 	height: 550px;
 }
@@ -51,11 +51,11 @@ body{
   #mensajes{
 	font-family: Inter;
 	font-style: normal;
-	font-weight: lighter;
-	font-size: 22px;
+	font-weight: normal;
+	font-size: 15px;
 	color: #3a3a3a;
 	background-color: #EBEBEB;
-	width: 50%;
+	width: 40%;
   }
 
 #encriptar{
@@ -160,7 +160,7 @@ body{
 	background-color: #ffffff;
 	font-family: Inter;
 	font-style: normal;
-	font-weight: lighter;
+	font-weight: normal;
 	font-size: 18px;
 	border: 2px;
 	border-color: #742c2c;
@@ -199,8 +199,8 @@ body{
 footer{
 	font-family: Inter;
 	font-style: normal;
-	font-weight: lighter;
-	font-size: 22px;
+	font-weight: normal;
+	font-size: 15px;
 	color: #3a3a3a;
 	background-color: #EBEBEB;
 }
