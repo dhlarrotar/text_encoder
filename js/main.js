@@ -6,7 +6,6 @@ var botonEncriptar= document.querySelector("#encriptar");
 var botonDesencriptar=document.querySelector("#desencriptar");
 var botonCopiar= document.querySelector("#copiar");
 
-
 /* Funciones y EvenrListener para borrar imágenes de inicio y mostrar área de resultado*/
 
 function borrarBienvenida(){

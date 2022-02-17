@@ -13,7 +13,8 @@ body{
 	line-height: 150%;
 	color: #742c2c;
 	background-color: #EBEBEB;
-	width: 800px;
+	width: 50%;
+	margin-bottom: 6px;
 }
 
 
@@ -27,6 +28,7 @@ body{
 
 
 #texto{
+	opacity: 0.93;
 	width: 90%;
 	height: 55%;
 	left: 240px;
@@ -39,8 +41,8 @@ body{
 	font-size: 22px;
 	line-height: 150%;
 	margin-left: 2%;
-	margin-bottom: 0.1%;
-	color: #771818;
+	color: #000000;
+	box-shadow: 0px 18px 24px -8px rgba(0, 0, 0, 0.08);
 }
 
 #texto:focus {
@@ -52,7 +54,7 @@ body{
 	font-family: Inter;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 18px;
+	font-size: 20px;
 	color: #3a3a3a;
 	background-color: #EBEBEB;
 	width: 67%;
@@ -102,10 +104,11 @@ body{
 
 
 .area-resultado{
+	opacity: 0.93;
 	position: absolute;
 	left:62%;
 	width: 36%;
-	height: 90%;
+	height: 600px;
 	top: 40px;
 	background: #FFFFFF;
 	box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
@@ -146,7 +149,8 @@ body{
 	line-height: 150%;
 	color: #521e1e;
 	text-align: center;
-	
+	margin-left: 10%;
+	margin-right: 10%;
 }
 
 
@@ -161,14 +165,14 @@ body{
 	font-family: Inter;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 18px;
+	font-size: 22px;
 	border: 2px;
 	border-color: #742c2c;
 	margin-left: 2%;
 	text-transform: lowercase;
 	margin-bottom: 2%;
-	color: #771818;
 	box-shadow: 0 0 5px #742c2c;
+	color: #000000;
 }
 
 #texto-resultado:focus {
@@ -197,18 +201,19 @@ body{
 }
 
 footer{
+	margin-top: 20px;
 	display:block;
 	font-family: Inter;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 18px;
+	font-size: 20px;
 	color: #3a3a3a;
 	background-color: #EBEBEB;
 }
 
 .logo{
-	width:2%;
-	height:2%;
+	width: 40px;
+	height:40px;
 }
 
 .fadeOut{

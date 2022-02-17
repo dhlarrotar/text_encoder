@@ -5,11 +5,12 @@
 		<title>Text encoder</title>
 		<link rel="icon" href="favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=0.7">
 	</head>
 	<body>
 		<div class="area-encriptado">
 			<header class="titulo">Encriptador de mensajes</header>
-			<textarea placeholder="Escribe aquí tu mensaje" id="texto" class="campo"></textarea>
+			<textarea placeholder="Escribe aquí tu mensaje" id="texto" spellcheck="false" class="campo"></textarea>
 			<ul id="mensajes">
 				<il>No utilizar acentos ni caracteres especiales</il>
 			</ul>
@@ -17,6 +18,12 @@
 			<br>
         	 <button id="encriptar" class="boton-main">Encriptar</button>
             <button id="desencriptar" class="boton-main">Desencriptar</button>
+			<footer> 
+				Creado por Daniel Larrota Rincón © 2022
+				<br> 
+				<a href="https://github.com/dhlarrotar/"> <img src="img/github.png" class="logo"> </a> 
+				<a href="https://www.linkedin.com/in/dhlarrotar"> <img src="img/linkedin.png" class="logo"> </a> 
+			</footer>
 
 		</div>
 		<div class="area-resultado">
@@ -27,18 +34,13 @@
 				
 			</div>
 			<div class=" fadeOut" id="imprimir-resultado">
-				<textarea id="texto-resultado"></textarea>
+				<textarea id="texto-resultado" spellcheck="false"></textarea>
 				<button id="copiar">Copiar resultado</button>
-			</div>
-					
+			</div>		
 		</div>
 		
 		<script src="js/main.js"></script>	
 
  	</body>
-	 <footer> 
-		Creado por Daniel Larrota Rincón © 2022
-		<a href="https://github.com/dhlarrotar/"> <img src="img/github.png" class="logo"> </a>
-		<a href="https://www.linkedin.com/in/dhlarrotar"> <img src="img/linkedin.png" class="logo"> </a> 
-	</footer>
+	 
 </html>
