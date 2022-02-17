@@ -9,11 +9,11 @@ body{
 	font-family: Inter;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 32px;
+	font-size: 27px;
 	line-height: 150%;
 	color: #742c2c;
 	background-color: #EBEBEB;
-	width: 50%;
+	width: 60%;
 	margin-bottom: 6px;
 }
 
@@ -201,6 +201,7 @@ body{
 }
 
 footer{
+	width: 100%;
 	margin-top: 20px;
 	display:block;
 	font-family: Inter;
