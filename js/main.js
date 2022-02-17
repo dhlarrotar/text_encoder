@@ -1,18 +1,39 @@
 var bienvenida = document.querySelector(".bienvenida")
+var campo = document.querySelector("#texto");
 var areaResultado = document.querySelector("#imprimir-resultado")
 var textoResultado= document.querySelector("#texto-resultado");
 var botonEncriptar= document.querySelector("#encriptar");
 var botonDesencriptar=document.querySelector("#desencriptar");
+var botonCopiar= document.querySelector("#copiar");
 
 
-/* borrar imágenes de inicio y mostrar área de resultado*/
+/* Funciones y EvenrListener para borrar imágenes de inicio y mostrar área de resultado*/
 
 function borrarBienvenida(){
     bienvenida.classList.remove("bienvenida");
     bienvenida.classList.add("fadeOut");
-    areaResultado.classList.remove("invisible");
+    areaResultado.classList.remove("fadeOut");
 }
 
+function mostrarBienvenida(){
+    bienvenida.classList.remove("fadeOut");
+    bienvenida.classList.add("bienvenida");
+    areaResultado.classList.add("fadeOut");
+}
+
+
+campo.addEventListener("input", function() {
+    var texto=campo.value;
+    if (texto.length!=0){
+       borrarBienvenida();
+       textoResultado.value= texto;
+    }
+    else{
+        mostrarBienvenida()
+    } 
+
+
+/* funciones para encriptar y desencriptar*/
 
 function encriptar(texto){     
     a=texto.replace(/e/gi,"enter");
@@ -32,28 +53,29 @@ function desencriptar(texto){
     return e;
 }
 
-/* encriptar*/
+
+/* Añadir eventListener a los botones de encriptar y desencriptar*/
 
 botonEncriptar.addEventListener("click", function() {
-    borrarBienvenida();
     var campo = document.querySelector("#texto");
     var texto= campo.value;
     textoResultado.value= encriptar(texto);  
 });
+
 botonDesencriptar.addEventListener("click", function() {
-    borrarBienvenida();
     var campo = document.querySelector("#texto");
     var texto= campo.value;
     textoResultado.value= desencriptar(texto);  
 });
 
-/*
-La letra "e" es convertida para "enter"
-La letra "i" es convertida para "imes"
-La letra "a" es convertida para "ai"
-La letra "o" es convertida para "ober"
-La letra "u" es convertida para "ufat"
-*/
+
+});
 
 
-botonDesencriptar.addEventListener("click",borrarBienvenida)
+botonCopiar.addEventListener("click", function() {
+    var copiarResultado= document.querySelector("#texto-resultado");
+    copiarResultado.select();
+    var textoCopiado=copiarResultado.value.toLowerCase();
+    navigator.clipboard.writeText(textoCopiado);
+    alert("tu mensaje ha sido añadido al portapapeles: " + textoCopiado);
+});

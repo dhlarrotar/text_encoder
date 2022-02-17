@@ -8,11 +8,15 @@
 	</head>
 	<body>
 		<div class="area-encriptado">
-			<h3 class="titulo">Encriptador de mensajes</h3>
-			<ul id="mensajes-errores"></ul>
+			<header class="titulo">Encriptador de mensajes</header>
 			<textarea placeholder="Escribe aquí tu mensaje" id="texto" class="campo"></textarea>
+			<ul id="mensajes"></ul>
+			<il>No utilizar acentos ni caracteres especiales</il>
+			<br>
+			<br>
         	 <button id="encriptar" class="boton-main">Encriptar</button>
             <button id="desencriptar" class="boton-main">Desencriptar</button>
+
 		</div>
 		<div class="area-resultado">
 			<div class="bienvenida">
@@ -21,7 +25,7 @@
 				<p class="bienvenida" id="texto-bienvenida">Escribe tu mensaje para encriptar o desencriptar</p>
 				
 			</div>
-			<div class=" invisible" id="imprimir-resultado">
+			<div class=" fadeOut" id="imprimir-resultado">
 				<textarea id="texto-resultado"></textarea>
 				<button id="copiar">Copiar resultado</button>
 			</div>
@@ -30,8 +34,7 @@
 			<footer> Desarrollado por Daniel Larrota Rincón</footer>
 		</div>
 		
-		<script src="js/encriptar.js"></script>	
-		<script src="js/copiar-texto.js"></script>	
+		<script src="js/main.js"></script>	
 
  	</body>
 </html>

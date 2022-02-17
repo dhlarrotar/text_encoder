@@ -20,7 +20,7 @@ body{
 	margin-top: 30px;
 	margin-bottom: 1%;
 	width: 60%;
-	height: 600px;
+	height: 550px;
 }
 
 
@@ -38,7 +38,7 @@ body{
 	font-size: 22px;
 	line-height: 150%;
 	margin-left: 2%;
-	margin-bottom: 2%;
+	margin-bottom: 0.2%;
 	color: #3a3a3a;
 }
 
@@ -47,6 +47,13 @@ body{
     box-shadow: 0 0 5px #719ECE;
   }
 
+  #mensajes{
+	font-family: Inter;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 22px;
+	color: #3a3a3a;
+  }
 
 #encriptar{
 
@@ -60,7 +67,7 @@ body{
 	flex: none;
 	order: 0;
 	flex-grow: 0;
-	margin: 0px 5px;
+	margin: 0px 2px;
 	font-size: 19px;
 	text-align: center;
 	color: #FFFFFF;
@@ -83,7 +90,7 @@ body{
 	flex: none;
 	order: 1;
 	flex-grow: 0;
-	margin: 0px 5px;
+	margin: 0px 2px;
 	font-size: 19px;
 	box-shadow: 0px 15px 22px -8px rgba(0, 0, 0, 0.08);
 }
@@ -104,6 +111,7 @@ body{
 }
 
 #caja-fuerte{
+	transition: 2s;
 	margin-left: 20%;
 	width: 60%;
 	align-items: center;
@@ -146,10 +154,14 @@ body{
 	font-family: Inter;
 	font-style: normal;
 	font-weight: lighter;
-	font-size: 22px;
+	font-size: 18px;
+	border: 2px;
+	border-color: #719ECE;
 	margin-left: 2%;
+	text-transform: lowercase;
 	margin-bottom: 2%;
 	color: #3a3a3a;
+	box-shadow: 0 0 5px #587594;
 }
 
 #texto-resultado:focus {
@@ -178,10 +190,5 @@ body{
 
 .fadeOut{
 	opacity: 0;
-	transition:0.3s;
-}
-
-.invisible{
-	display: none;
-	transition:0.3s;
+	transition:0.7s;
 }
