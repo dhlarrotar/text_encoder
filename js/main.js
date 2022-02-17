@@ -76,6 +76,7 @@ botonCopiar.addEventListener("click", function() {
     var copiarResultado= document.querySelector("#texto-resultado");
     if (copiarResultado.value.length!=0){
         copiarResultado.select();
+        copiarResultado.setSelectionRange(0, 99999);
         var textoCopiado=copiarResultado.value.toLowerCase();
         navigator.clipboard.writeText(textoCopiado);
         alert("tu mensaje ha sido añadido al portapapeles: " + textoCopiado);
