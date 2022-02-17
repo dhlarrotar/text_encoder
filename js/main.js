@@ -29,7 +29,8 @@ campo.addEventListener("input", function() {
        textoResultado.value= texto;
     }
     else{
-        mostrarBienvenida()
+        mostrarBienvenida();
+        textoResultado.value="";
     } 
 
 
@@ -74,8 +75,10 @@ botonDesencriptar.addEventListener("click", function() {
 
 botonCopiar.addEventListener("click", function() {
     var copiarResultado= document.querySelector("#texto-resultado");
-    copiarResultado.select();
-    var textoCopiado=copiarResultado.value.toLowerCase();
-    navigator.clipboard.writeText(textoCopiado);
-    alert("tu mensaje ha sido añadido al portapapeles: " + textoCopiado);
+    if (copiarResultado.value.length!=0){
+        copiarResultado.select();
+        var textoCopiado=copiarResultado.value.toLowerCase();
+        navigator.clipboard.writeText(textoCopiado);
+        alert("tu mensaje ha sido añadido al portapapeles: " + textoCopiado);
+    }
 });

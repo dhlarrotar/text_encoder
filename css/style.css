@@ -21,7 +21,7 @@ body{
 	margin-top: 30px;
 	margin-bottom: 2%;
 	width: 60%;
-	height: 550px;
+	height: 500px;
 }
 
 
@@ -35,11 +35,11 @@ body{
 	background-color: #f7f7f7;;
 	font-family: Inter;
 	font-style: normal;
-	font-weight: lighter;
+	font-weight: normal;
 	font-size: 22px;
 	line-height: 150%;
 	margin-left: 2%;
-	margin-bottom: 0.2%;
+	margin-bottom: 0.1%;
 	color: #771818;
 }
 
@@ -52,10 +52,10 @@ body{
 	font-family: Inter;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 15px;
+	font-size: 18px;
 	color: #3a3a3a;
 	background-color: #EBEBEB;
-	width: 40%;
+	width: 67%;
   }
 
 #encriptar{
@@ -71,7 +71,7 @@ body{
 	flex: none;
 	order: 0;
 	flex-grow: 0;
-	margin: 0px 2px;
+	margin: 0px 2%;
 	font-size: 19px;
 	text-align: center;
 	color: #FFFFFF;
@@ -128,7 +128,7 @@ body{
 #texto-bienvenida{
 	font-family: Inter;
 	font-style: normal;
-	font-weight: lighter;
+	font-weight: normal;
 	font-size: 22px;
 	line-height: 100%;
 	color: #3a3a3a;
@@ -197,12 +197,18 @@ body{
 }
 
 footer{
+	display:block;
 	font-family: Inter;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 15px;
+	font-size: 18px;
 	color: #3a3a3a;
 	background-color: #EBEBEB;
+}
+
+.logo{
+	width:2%;
+	height:2%;
 }
 
 .fadeOut{
