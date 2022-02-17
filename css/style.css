@@ -3,16 +3,17 @@ body{
 	flex-direction: column;
 	align-items: flex-start;
 	padding: 0px;
-	background-color: #dfe8f1;
-}	
-
+	background-image: url(../img/background.svg);
+}
 .titulo{
 	font-family: Inter;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 32px;
 	line-height: 150%;
-	color: #0A3871;
+	color: #742c2c;
+	background-color: #EBEBEB;
+	width: 50%;
 }
 
 
@@ -31,7 +32,7 @@ body{
 	left: 240px;
 	top: 168px;
 	border:0;
-	background-color: #dfe8f1;
+	background-color: #f7f7f7;;
 	font-family: Inter;
 	font-style: normal;
 	font-weight: lighter;
@@ -39,12 +40,12 @@ body{
 	line-height: 150%;
 	margin-left: 2%;
 	margin-bottom: 0.2%;
-	color: #3a3a3a;
+	color: #771818;
 }
 
 #texto:focus {
     outline: none !important;
-    box-shadow: 0 0 5px #719ECE;
+    box-shadow: 0 0 5px #742c2c;
   }
 
   #mensajes{
@@ -53,6 +54,8 @@ body{
 	font-weight: lighter;
 	font-size: 22px;
 	color: #3a3a3a;
+	background-color: #EBEBEB;
+	width: 50%;
   }
 
 #encriptar{
@@ -62,7 +65,8 @@ body{
 	padding: 18px;
 	left: 0px;
 	top: 0px;	
-	background: #0A3871;
+	border: 1px solid #a72121;
+	background: #a72121;;
 	border-radius: 24px;	
 	flex: none;
 	order: 0;
@@ -83,8 +87,9 @@ body{
 	position: static;
 	left: 352px;
 	top: 0px;
-	background: #D8DFE8;
-	border: 1px solid #0A3871;
+	background: #e7e7e7;
+	border: 1px solid #771818;
+	color: #771818;
 	box-sizing: border-box;
 	border-radius: 24px;
 	flex: none;
@@ -126,10 +131,12 @@ body{
 	font-weight: lighter;
 	font-size: 22px;
 	line-height: 100%;
-	color: #0A3871;
+	color: #3a3a3a;
 	text-align: center;
-	margin: 2%;
+	margin-left: 15%;
+	margin-right: 15%;
 }
+
 
 #titulo-bienvenida{
 	font-family: Inter;
@@ -137,7 +144,7 @@ body{
 	font-weight: bold;
 	font-size: 27px;
 	line-height: 150%;
-	color: #0A3871;
+	color: #521e1e;
 	text-align: center;
 	
 }
@@ -156,17 +163,17 @@ body{
 	font-weight: lighter;
 	font-size: 18px;
 	border: 2px;
-	border-color: #719ECE;
+	border-color: #742c2c;
 	margin-left: 2%;
 	text-transform: lowercase;
 	margin-bottom: 2%;
-	color: #3a3a3a;
-	box-shadow: 0 0 5px #587594;
+	color: #771818;
+	box-shadow: 0 0 5px #742c2c;
 }
 
 #texto-resultado:focus {
     outline: none !important;
-    box-shadow: 0 0 5px #719ECE;
+    box-shadow: 0 0 5px #742c2c;
   }
 
 
@@ -176,8 +183,9 @@ body{
 	padding: 24px;
 	position: absolute;
 	top: 80%;
+	color: #771818;
 	background: #ffffff;
-	border: 1px solid #0A3871;
+	border: 1px solid #742c2c;
 	box-sizing: border-box;
 	border-radius: 24px;
 	flex: none;
@@ -186,6 +194,15 @@ body{
 	margin: 0px 24px;
 	font-size: 19px;
 	box-shadow: 0px 15px 22px -8px rgba(0, 0, 0, 0.08);
+}
+
+footer{
+	font-family: Inter;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 22px;
+	color: #3a3a3a;
+	background-color: #EBEBEB;
 }
 
 .fadeOut{
