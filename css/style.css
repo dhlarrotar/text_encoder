@@ -51,13 +51,34 @@ body{
   }
 
   #mensajes{
+	opacity: 0.93;
 	font-family: Inter;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 20px;
 	color: #3a3a3a;
 	background-color: #EBEBEB;
-	width: 67%;
+	width: 60%;
+  }
+  #area-error{
+	margin-left: 2%;
+	background-color: #a72121;
+
+
+	width: 90%;
+  }
+  #error{
+	
+
+	opacity: 0.83;
+	max-width: 20%;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	color: #ffffff;
+	width: 60%;
+	text-align: center;
   }
 
 #encriptar{
@@ -201,6 +222,7 @@ body{
 }
 
 footer{
+	opacity: 0.9;
 	width: 100%;
 	margin-top: 20px;
 	display:block;

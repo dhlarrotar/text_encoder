@@ -26,4 +26,4 @@ Aplicación web para encriptar y desencriptar mensajes
 
 ## Temas 🎨
 
-Este proyecto fue realizado durante el programa de Oracle Next Education (ONE) como primer desafío de lógica de programación.
+Este proyecto fue realizado durante el programa Oracle Next Education (ONE) como primer desafío de lógica de programación.
