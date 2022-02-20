@@ -29,8 +29,8 @@ function verificarValores(texto){
     var patronAceptados = /[a-zA-Z\s]/gi;
     var patronRechazados = /[^a-zA-Z\s]/gi;
     var aceptados=texto.match(patronAceptados);
-    var rechazados1=new Set(texto.match(patronRechazados));
-    var rechazados=[...rechazados1]
+    var rechazadosSet=new Set(texto.match(patronRechazados));
+    var rechazados=[...rechazadosSet]
     if (rechazados.length!=0){
         mensajeError.textContent= "Los siguientes caracteres son inválidos y serán ignorados: "+rechazados;
     }
