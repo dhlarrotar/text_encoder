@@ -1,4 +1,3 @@
-var bienvenida = document.querySelector(".bienvenida")
 var campo = document.querySelector("#texto");
 var areaResultado = document.querySelector("#imprimir-resultado")
 var textoResultado= document.querySelector("#texto-resultado");
