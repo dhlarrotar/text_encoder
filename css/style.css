@@ -291,36 +291,34 @@ button:focus{
 	border-radius: 32px;
   margin-top: 6%;
 	margin-bottom: 2%;
+  justify-content: center;
 
 }
 
 
 
 #texto{
-	margin: 1%;
-	width: 90%;
-	height: 55%;
-	left: 240px;
-	top: 168px;
+  margin: 5%;
+	width: 88%;
+	height: 85%;
 	border:0;
 	font-family: Inter;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 22px;
-	line-height: 150%;
-	margin-left: 2%;
 	color: #4b0f39;
+  background: none;
+  text-align: justify;
 
 }
 
 ::placeholder{
 	color: #a23982;
 }
-
 #texto:focus {
-    outline: none !important;
-    box-shadow: 0 0 5px #ffffff;
-  }
+  outline: none !important;
+  box-shadow: 0 0 5px #742c2c;
+}
 
   #mensajes{
 	opacity: 0.93;
