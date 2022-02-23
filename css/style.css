@@ -297,13 +297,12 @@ button:focus{
 
 
 #texto{
-	margin: 3%;
+	margin: 1%;
 	width: 90%;
 	height: 55%;
 	left: 240px;
 	top: 168px;
 	border:0;
-	background-color: #ffffff;;
 	font-family: Inter;
 	font-style: normal;
 	font-weight: normal;
