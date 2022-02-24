@@ -1,7 +1,6 @@
 body {
-    
     font-weight: 100;
-    height:800px;
+    height:900px;
     background: radial-gradient(#a23982,#1f1013);
     background-repeat: no-repeat;
     -webkit-overflow-Y: hidden;
