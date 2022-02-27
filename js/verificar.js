@@ -4,7 +4,8 @@ var botonCopiar= document.querySelector("#copiar");
 var mensajeError = document.querySelector("#error");
 
 
-/*verificar que el texto ingresado no contenga números ni caracteres especiales*/
+/*verificar que el texto ingresado no cont
+enga números ni caracteres especiales*/
 
 function verificarValores(texto){
     var patronAceptados = /[a-zA-Z\s]/gi;
