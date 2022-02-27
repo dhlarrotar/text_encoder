@@ -9,9 +9,12 @@ Aplicación web para encriptar y desencriptar mensajes
 2 Selecciona el botón encriptar o desencriptar<br> 
 3 ¡Tu mensaje secreto está listo! Podrás copiar el resultado al portapapeles en el área indicada.
 <br><br>
-<img src="./img/video1.gif" width="500">
-<br><br>
-<img src="./img/video2.gif" width="500">
+
+
+https://user-images.githubusercontent.com/91299939/155897000-9471869c-baa5-446b-9277-ecb4138bd4c4.mp4
+<br>
+<br>
+https://user-images.githubusercontent.com/91299939/155897017-db371a7d-6949-420e-9e06-b05ebfa21446.mp4
 
 
 ## Construido con 🛠️
