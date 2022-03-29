@@ -1,6 +1,9 @@
 body {
     font-weight: 100;
     height:900px;
+	margin-right:10px;
+	margin-left:10px;
+	
     background: radial-gradient(#a23982,#1f1013);
     background-repeat: no-repeat;
     -webkit-overflow-Y: hidden;
