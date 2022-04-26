@@ -5,47 +5,57 @@
 		<title>Text encryptor</title>
 		<link rel="icon" href="favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+        <script src="https://kit.fontawesome.com/9fb909ccd9.js" crossorigin="anonymous"></script>
+
+
 		<meta name="viewport" content="width=device-width, initial-scale=0.7">
 	</head>
 		
-	<body>
-		<div class="area-encriptado">
-			<header class="titulo">Encriptador de mensajes</header>
-			<div id="area-texto-encriptado">
-				<textarea placeholder="Escribe aquí tu mensaje" id="texto" spellcheck="false" class="campo"></textarea>
-			</div>
-			<div id="area-error">
-				<span id="error"></span>
-			</div>
-			<ul id="mensajes">
-				<il>No utilizar números, acentos, ni caracteres especiales.</il>
-			</ul>
-			<br>
-			<br>
-        	 <button id="encriptar" class="boton-main">Encriptar</button>
-            <button id="desencriptar" class="boton-main">Desencriptar</button>
-			<br><br>
-			<footer> 
-				Creado por Daniel Larrota Rincón © 2022
-				<br>     
-				<a href="https://github.com/dhlarrotar/"> <img src="img/github.png" class="logo"> </a> 
-				<a href="https://www.linkedin.com/in/dhlarrotar"> <img src="img/linkedin.png" class="logo"> </a>
+	<header class="titulo">Encriptador de mensajes</header>
 
-			</footer>
-		</div>
+	<body>
+		
+		<textarea  placeholder="Escribe aquí tu mensaje" id="texto" spellcheck="false" class="text-box"></textarea>
+
+
+
+
+
+		<div class="text-box">
 		<div class="area-resultado">
 			<div class="bienvenida">
-				<img src="img/caja-fuerte.png" class="bienvenida" id="caja-fuerte">
+				<i class="fa-solid fa-vault"></i>
 				<p class="bienvenida" id="titulo-bienvenida"> No se han detectado mensajes</p>
 				<p class="bienvenida" id="texto-bienvenida">Escribe tu mensaje para encriptar o desencriptar</p>
 				
 			</div>
+
 			<div class=" fadeOut" id="imprimir-resultado">
 				<textarea id="texto-resultado" spellcheck="false"></textarea>
-				<button id="copiar">Copiar resultado</button>
+				
 			</div>		
 		</div>
+	</div>
+
+
+		<div id="area-error">
+			<span id="error"></span>
 		
+			<ul id="mensajes">
+				<il>No utilizar números, acentos, ni caracteres especiales.</il>
+			</ul>
+		</div>
+
+
+		<div class="button-div">
+			<button id="encriptar" class="boton-main">Encriptar</button>
+			<button id="desencriptar" class="boton-main">Desencriptar</button>
+			<button  class="fadeOut" id="copiar">Copiar resultado</button>
+		</div>
+
 		<script src="js/bienvenida.js"></script>
 		<script src="js/copiar.js"></script>	
 		<script src="js/encriptar.js"></script>	
@@ -62,5 +72,10 @@
 		<div class='light x8'></div>
 		<div class='light x9'></div>
  	</body>
-	
+	 <footer> 
+		© Daniel Larrota Rincón 2022     
+		<a href="https://github.com/dhlarrotar/"> <i class="fa-brands fa-github"></i></a> 
+		<a href="https://www.linkedin.com/in/dhlarrotar"><i class="fa-brands fa-linkedin"></i>  </a>
+
+	</footer>
 </html>

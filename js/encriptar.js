@@ -12,7 +12,8 @@ Reglas de encriptación:
 */
   
 
-function encriptar(texto){     
+function encriptar(texto){    
+    botonCopiar.classList.remove("fadeOut"); 
     a=texto.replace(/e/gi,"enter");
     b=a.replace(/i/gi,"imes");
     c=b.replace(/a/gi,"ai");

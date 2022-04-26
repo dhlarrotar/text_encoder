@@ -15,6 +15,7 @@ var botonDesencriptar=document.querySelector("#desencriptar");
 
 
 function desencriptar(texto){     
+    botonCopiar.classList.remove("fadeOut");
     a=texto.replace(/enter/gi,"e");
     b=a.replace(/imes/gi,"i");
     c=b.replace(/ai/gi,"a");
