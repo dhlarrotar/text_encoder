@@ -17,12 +17,6 @@ button:focus{
 }
 
 .header{
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 200;
   color: white;
   font-size: 2em;
 }
@@ -35,15 +29,11 @@ i:hover, textarea:hover, button:hover, .text-box:hover{
 
 .titulo{
   font-family: 'Montserrat', sans-serif;
-	font-style: bold;
-	font-weight: normal;
-	font-size: 25px;
-	line-height: 150%;
-	color: #fdf8f8;	
-	width: 60%;
-	margin-bottom: 16px;
+  color: white;
+  font-size: 2em;
+  margin-top:90px;
+  margin-bottom:30px;
 }
-
 
 
 
@@ -188,13 +178,26 @@ footer i{
   }
   
 
-  @media screen and (max-width:553px) and (max-height:981px){
+  @media screen and (max-width:783px) and (max-height:881px){
     .text-box, #texto{
       height: 16%;
     }
 
-    body i{
+    #vault{
       display: none !important;
     }
     }
     
+
+
+    @media screen and (max-height:743px){
+      .bienvenida{
+        display: none;
+      
+      }
+
+      .text-box, #texto{
+        height: 6%;
+      }
+  
+      }
