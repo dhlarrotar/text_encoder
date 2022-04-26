@@ -31,7 +31,7 @@ botonDesencriptar.addEventListener("click", function() {
     var campo = document.querySelector("#texto");
     var texto= campo.value;
     if (verificarValores(texto)){
-        textoResultado.value= desencriptar(verificarValores(texto));
-        campo.value="";
+        textoResultado.textContent= desencriptar(verificarValores(texto));
+       
     }   
 });

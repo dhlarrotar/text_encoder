@@ -12,6 +12,7 @@ body {
 
 
 
+
 button:focus{
   outline: none;
 }
@@ -65,9 +66,11 @@ textarea{
   font-family: 'Montserrat', sans-serif;
 }
 
+
+
 #texto:focus {
   outline: none !important;
-  box-shadow: 0 0 5px #742c2c;
+  box-shadow: 0 0 5px #101010;
 }
 
   #mensajes{
@@ -131,20 +134,20 @@ button{
 
 
 #texto-resultado{
-	background-color: #ffffff;
-	font-size: 22px;
-	border: 2px;
+	
 	border-color: #ffffff;
+
+  height: 80%;
+  width: 80%;
 
 	text-transform: lowercase;
 
-	box-shadow: 0 0 5px #fdf8f8;
 	color: #4b0f39;
 }
 
 #texto-resultado:focus {
     outline: none !important;
-    box-shadow: 0 0 5px #742c2c;
+    box-shadow: 0 0 5px #000000;
   }
 
 
@@ -205,10 +208,11 @@ footer i{
 
 
     @media screen and (max-height:643px){
-      .bienvenida{
+      .bienvenida, #mensajes, footer{
         display: none;
       
       }
+
 
       .text-box, #texto{
         height: 6%;

@@ -29,8 +29,8 @@ botonEncriptar.addEventListener("click", function() {
     var campo = document.querySelector("#texto");
     var texto= campo.value;
     if (verificarValores(texto)){
-        textoResultado.value= encriptar(verificarValores(texto));
-        campo.value="";
+        textoResultado.textContent= encriptar(verificarValores(texto));
+       
     }  
 });
 

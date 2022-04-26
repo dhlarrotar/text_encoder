@@ -1,6 +1,6 @@
 var campo = document.querySelector("#texto");
 var areaResultado = document.querySelector("#imprimir-resultado")
-var textoResultado= document.querySelector("#texto-resultado");
+var textoResultado= document.querySelector(".area-resultado");
 var botonCopiar= document.querySelector("#copiar");
 
 
@@ -9,11 +9,13 @@ var botonCopiar= document.querySelector("#copiar");
 botonCopiar.addEventListener("click", function(event) {
     event.preventDefault();
     var copiarResultado= document.querySelector("#texto-resultado");
-    if (copiarResultado.value.length!=0){
-        copiarResultado.select();
-        var textoCopiado=copiarResultado.value.toLowerCase();
-        navigator.clipboard.writeText(textoCopiado);
-        document.execCommand("copy");    
+    if (copiarResultado.textContent.length!=0){
+        var textoCopiado=copiarResultado.textContent.toLowerCase();
+        navigator.clipboard.writeText(textoCopiado);   
         alert("tu mensaje ha sido añadido al portapapeles: " + textoCopiado);
+        campo.value="";
+        copiarResultado.textContent="";
+        mostrarBienvenida();
+
     }
 });
