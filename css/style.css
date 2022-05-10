@@ -93,6 +93,7 @@ textarea{
 button{
 	padding: 18px;
 	margin: 4px;
+  width: 190px;
 	border: 1px solid #ffffff;
 	background: #ffffff;
 	border-radius: 24px;	
@@ -162,9 +163,10 @@ footer{
 	color: #fdf8f8;
 }
 
- footer p, footer i{
+ footer p, footer i, footer a{
   display: inline;
   color: #fdf8f8;
+  text-decoration: none;
 }
 
 footer i{
